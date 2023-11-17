@@ -17,9 +17,12 @@ const Filter = ({ onSearch }) => {
   };
 
   return (
-    <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4/5 p-6 bg-white shadow-md rounded-md mt-40">
-      <div className="flex space-x-8 items-center">
-        <div className="flex flex-col items-start flex-grow w-3/5 pr-6">
+    <div
+      className="relative mx-auto flex justify-between items-center w-3/5 p-7 bg-white shadow-md rounded-md"
+      style={{ marginTop: "-65px", zIndex: 1 }}
+    >
+      <div className="flex space-x-8 items-center w-3/5">
+        <div className="flex flex-col items-start flex-grow pr-6">
           <label className="text-lg font-medium text-gray-700 mb-2">
             Tujuan
           </label>
@@ -31,7 +34,7 @@ const Filter = ({ onSearch }) => {
             onChange={(e) => setDestination(e.target.value)}
           />
         </div>
-        <div className="flex flex-col items-start flex-grow w-3/5 pr-6">
+        <div className="flex flex-col items-start flex-grow pr-6">
           <label className="text-lg font-medium text-gray-700 mb-2">
             Jadwal
           </label>
@@ -41,18 +44,18 @@ const Filter = ({ onSearch }) => {
               onChange={(date) => setStartDate(date)}
               dateFormat="dd/MM/yyyy"
               className="w-full"
-              placeholderText="Pilih Tanggal"
+              placeholderText="Kapan Saja"
             />
           </div>
         </div>
-        <div className="flex flex-col items-start flex-grow w-1/5">
-          <button
-            className="bg-primary text-white px-16 py-5 mt-2 hover:bg-primary text-lg"
-            onClick={handleSearch}
-          >
-            Cari
-          </button>
-        </div>
+      </div>
+      <div className="flex flex-col items-start">
+        <button
+          className="bg-primary text-white px-16 py-5 mt-2 hover:bg-primary text-lg"
+          onClick={handleSearch}
+        >
+          Cari
+        </button>
       </div>
     </div>
   );
