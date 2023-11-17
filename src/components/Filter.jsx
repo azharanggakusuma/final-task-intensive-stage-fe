@@ -18,8 +18,8 @@ const Filter = ({ onSearch }) => {
 
   return (
     <div
-      className="relative mx-auto flex justify-between items-center w-3/5 p-7 bg-white shadow-md rounded-md"
-      style={{ marginTop: "-65px", zIndex: 1 }}
+      className="relative mx-auto flex justify-between items-center w-3/5 p-5 bg-white shadow-md rounded-md"
+      style={{ marginTop: "-60px", zIndex: 1 }}
     >
       <div className="flex space-x-8 items-center w-3/5">
         <div className="flex flex-col items-start flex-grow pr-6">

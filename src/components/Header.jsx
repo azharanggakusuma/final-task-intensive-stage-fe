@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <div>
       {/* Navbar */}
-      <header className="bg-white shadow-md p-4">
+      <header className="bg-white p-4">
         <Container>
           <div className="container mx-auto flex justify-between items-center">
             {/* Menu kiri */}
