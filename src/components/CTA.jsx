@@ -19,11 +19,9 @@ const CTA = () => {
                 </div>
               </div>
               <p className="relative self-stretch text-white">
-                Download the app to manage your projects, keep track of the{" "}
-                <br />
-                progress and complete tasks without procastinating. Stay on
-                track <br />
-                and complete on time!
+                Download the app to manage your projects, keep track of the <br />
+                progress and complete tasks without procastinating. Stay on <br />
+                track and complete on time!
               </p>
             </div>
           </div>
