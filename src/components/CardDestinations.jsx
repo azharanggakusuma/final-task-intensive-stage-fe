@@ -127,7 +127,7 @@ const CardDestinations = () => {
           {cardData.map((card, index) => (
             <div
               key={index}
-              className="grid grid-cols-1 gap-5 p-2 lg:-ml-44 md:-ml-44 relative"
+              className="grid grid-cols-1 gap-5 p-2 lg:-ml-48 md:-ml-48 relative"
               style={cardStyle}
             >
               <div className="bg-white shadow-md rounded-md">
