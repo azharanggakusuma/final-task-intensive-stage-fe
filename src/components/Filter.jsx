@@ -8,7 +8,6 @@ const Filter = ({ onSearch }) => {
   const [startDate, setStartDate] = useState(null);
 
   const handleSearch = () => {
-    // Do something with the search criteria
     const searchCriteria = {
       destination,
       startDate,
@@ -18,11 +17,11 @@ const Filter = ({ onSearch }) => {
 
   return (
     <div
-      className="relative mx-auto flex justify-between items-center w-3/5 p-5 bg-white shadow-md rounded-md"
-      style={{ marginTop: "-60px", zIndex: 1 }}
+      className="relative mx-auto flex flex-col justify-between items-center w-3/5 p-4 bg-white shadow-md rounded-md md:flex-row md:items-center lg:-mt-[90px] md:-mt-[90px]"
+      style={{ zIndex: 1 }}
     >
-      <div className="flex space-x-8 items-center w-3/5">
-        <div className="flex flex-col items-start flex-grow pr-6">
+      <div className="flex flex-col items-start mb-4 md:mb-0 md:flex-row md:space-x-8 w-full">
+        <div className="w-full md:w-2/5 pr-0 md:pr-6">
           <label className="text-lg font-medium text-gray-700 mb-2">
             Tujuan
           </label>
@@ -34,7 +33,7 @@ const Filter = ({ onSearch }) => {
             onChange={(e) => setDestination(e.target.value)}
           />
         </div>
-        <div className="flex flex-col items-start flex-grow pr-6">
+        <div className="w-full md:w-2/5 pr-0 md:pr-6 mt-4 md:mt-0">
           <label className="text-lg font-medium text-gray-700 mb-2">
             Jadwal
           </label>
@@ -49,9 +48,9 @@ const Filter = ({ onSearch }) => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-start">
+      <div className="w-full md:w-1/5 mt-4 md:mt-0">
         <button
-          className="bg-primary text-white px-16 py-5 mt-2 hover:bg-primary text-lg"
+          className="bg-primary text-white font-semibold lg:px-12 lg:py-5 md:px-12 md:py-5 hover:bg-primary lg:text-lg sm:text-sm rounded w-full"
           onClick={handleSearch}
         >
           Cari
