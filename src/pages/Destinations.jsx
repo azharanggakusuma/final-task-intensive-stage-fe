@@ -1,11 +1,14 @@
 // src/pages/Destinations.js
 import React from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const Destinations = () => {
   return (
     <div>
-      <h2>Destinations Page</h2>
-      {/* Display a list of destinations */}
+      <Header />
+      
+      <Footer />
     </div>
   );
 };

@@ -1,6 +1,8 @@
 // src/pages/Home.js
 import React from "react";
 import Header from "../components/Header";
+import Jumbotron from "../components/Jumbotron";
+import Filter from "../components/Filter";
 import CardDestinations from "../components/CardDestinations";
 import CardSea from "../components/CardSea";
 import CardGunung from "../components/CardGunung";
@@ -12,16 +14,19 @@ const Home = () => {
   return (
     <div>
       <Header />
+      <Jumbotron />
+      <Filter />
+      <div className="lg:mb-[60px]" />
       <CardDestinations />
-      <br /> <br />
+      <div className="lg:mb-[32px]" />
       <CardSea />
-      <br /> <br />
+      <div className="lg:mb-[32px]" />
       <CardGunung />
-      <br /> <br />
+      <div className="lg:mb-[32px]" />
       <CardAlam />
-      <br /> <br />
+      <div className="lg:mb-[32px]" />
       <CTA />
-      <br /> <br />
+      <div className="lg:mb-[32px]" />
       <Footer />
     </div>
   );

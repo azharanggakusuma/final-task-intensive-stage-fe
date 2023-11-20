@@ -3,8 +3,6 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaSearch, FaBars } from "react-icons/fa";
 import Container from "./Container";
-import Jumbotron from "./Jumbotron";
-import Filter from "./Filter";
 import logo from "../assets/img/logo.png";
 
 const Header = () => {
@@ -16,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <div className="mb-16">
+    <div>
       {/* Navbar */}
       <header className="bg-white p-4 hidden md:block">
         <Container>
@@ -114,13 +112,6 @@ const Header = () => {
           </Link>
         </div>
       </div>
-
-      <Jumbotron />
-      <Filter
-        onSearch={(searchCriteria) =>
-          console.log("Search Criteria:", searchCriteria)
-        }
-      />
     </div>
   );
 };
