@@ -8,9 +8,9 @@ import usersData from "../users.json"; // Sesuaikan dengan path yang benar
 
 const Header = () => {
   const location = useLocation();
-  const navigate = useNavigate();
+  const navigate = useNavigate(); // Menggunakan useNavigate untuk navigasi
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const isAuthenticated = false;
+  const isAuthenticated = false; // Ganti dengan logika otentikasi yang sesuai
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
